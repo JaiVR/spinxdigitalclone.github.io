@@ -1,38 +1,874 @@
-.App {
-  text-align: center;
+.mainpage{
+    background-color:#000000;   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    width:auto; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App{
+    cursor: url('/public/cursor-dvm-2-2.png'), auto;
+}
+.landing-text{
+    color: white;
+    font-size: 2cm;
+    padding-left: 3.2%;
+    padding-right: 3.2%;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+nav{
+    padding-left: 3.2%;
+    padding-right: 3.2%;
+    padding-top: 2%;
+    padding-bottom: 0;
+}
+.landing-text-div{
+    align-self: center;
+    
+    
+}
+.landing-text-main-editz{
+    margin: 0;
+    font-size: 8cm;
+    color: white;
+    padding-left: 3.2%;
+    padding-right: 3.2%;
+    padding-bottom: 0;
+    padding-top: 0;
+    
+}
+
+.button-image{
+    height: 40px;
+}
+button{
+    background-color: greenyellow;
+    display: flex;
+    padding: 1%;
+    border-radius: 1px;
+    height: 56px;
+}
+button:hover{
+    background-color: white;
+}
+.button-text{
+    align-self: center;
+}
+.button-image{
+    align-self: center;
+}
+
+nav {
+    display:grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    margin: 0px auto;
+    height: 50px;
+}
+nav ul{
+    list-style-type:none;
+    padding-left: 48%;
+}
+nav ul li{
+    float: left;
+    width: 217px;
+    line-height: 50px;
+    text-align: center;
+    
+}
+.logo{
+    padding-top: 5%;
+}
+nav ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size:large;
+    display: inline-block;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    
+    
+}
+.about-div{
+  background-color: white;
+   display: none;
+}
+
+nav ul a:hover{
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    border-color: yellowgreen;
+    transition: border-bottom 0.15s ease-in;
+    border-radius: 2px;
+    
+    
+    
+}
+nav ul li p{
+    color:grey;
+    
+}
+nav ul li a{
+    font-weight: bold;
+}
+nav ul ul{
+    position:absolute;
+    visibility: hidden;
+    background-color: white;
+}
+nav ul li :hover > ul{
+    position:absolute;
+    visibility: visible;
+}
+
+
+button{
+    overflow: hidden;
+}
+.button-image,.button-text{
+    position: relative; 
+    animation: move-text 6.4s linear infinite; 
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @keyframes move-text {
+    0% {
+      left: 0;
+    }
+    25% {
+      left: 25%;
+    }
+    50%{
+       left: 50%;
+        
+    }
+    75%{
+        left: 75%;
+    }
+    100%{
+        left: 100%;
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+  .landing-text-main-editz{
+    background: url('/public/ezgif.com-optimize.gif');
+   
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
+.landing-text-div{
+    animation: fade-in 3s ease-in;
+}
+.landing-text-main-editz{
+    animation: fade-in 0.7s ease-in;
+}
+
+
+  
+ 
+  
+.Rest-content{
+    background-color: rgb(1, 1, 1);
+    color:white;
+    padding: 3%;
+
+}
+.mainpage{
+    padding-bottom: 3%;
+}
+
+  
+.Page-2{
+    text-align: left;
+    
+    
+    background-repeat: no-repeat;
+    background-size: 15%;
+    padding-bottom: 5%;
+}
+.Page-2 h1{
+    font-size: 1.5cm;
+    padding-left: 10%;
+    padding-right: 30%;
+}
+.Page-2 h2{
+    color: grey;
+    font-weight:500;
+    font-size: 1.2cm;
+    padding-left: 10%;
+    padding-right: 15%;
+}
+.Page3{
+    padding-top: 2%;
+    background-image: url(/public/page3-bg-1.jpeg),url(/public/page3-bg-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: 23%;
+    background-position: top right, bottom left;
+    
+}
+.Page3 p{
+  font-size: 1.5cm;
+  font-weight: 700;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: grey; 
+}
+.Page3 a{
+  color:white;
+  text-decoration: underline;
+  
+}
+.Page4{
+    padding-top: 5%;
+    
+
+}
+.page4-ele{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 3%;
+    align-items: center;
+    text-align: center;
+}
+.page4-subele-1,.page4-subele-2,.page4-subele-3,.page4-subele-3,.page4-subele-4{
+   display: grid;
+   text-align: center;
+   
+}
+.Page4 h2{
+    text-align: center;
+    font-size: 1cm;
+    padding-bottom: 5%;
+}
+.Page4 a{
+    color: white;
+    font-weight: 700;
+    font-size: 0.5cm;
+    text-decoration-color: grey;
+    text-decoration-thickness: 2px;
+}
+
+
+
+
+.page4-ele {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
+  
+  
+.image-page4{
+    padding-bottom: 10%;
+}
+.Page5{
+    padding-top: 10%;
+}
+.Page5 h1{
+    font-size: 2cm;
+    text-align: right;
+    padding-right: 1%;
+    background: linear-gradient(90deg,#00dbde,#fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Page5 p{
+    font-size: 1cm;
+    font-weight: 800;
+}
+.Page6 p{
+    font-size: 1cm;
+    font-weight: 800;
+}
+.Page7 p{
+    font-size: 1cm;
+    font-weight: 800;
+}
+.Page5 h2{
+    color: grey;
+}
+.Page6 h2{
+    color: grey;
+}
+.Page7 h2{
+    color: grey;
+}
+.Page-5-subele,.Page6,.Page7{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 5%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+.Page6{
+    background-color: white;
+    
+}
+.Page-5-subele{
+    padding-top: 2%;
+}
+.Page6 p{
+    color: black;
+}
+
+
+
+
+
+.Seemywork a{
+    color: white;
+    font-size: 0.8cm;
+    position: absolute;
+    right:100px;
+    text-decoration-color: gray;
+    
+}
+.Page8{
+    padding-top: 8%;
+    padding-bottom: 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.page8-lhs h1{
+    font-size: 4cm;
+    margin: 0;
+    background: linear-gradient(90deg,#01eeff,#f6ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.page8-lhs h2{
+    font-size: 1.3cm;
+    
+}
+.page8-lhs p{
+    font-size: 0.7cm;
+    
+    color: rgb(210, 204, 204);
+}
+.page8-rhs h1{
+    font-size: 1.5cm;
+}
+.page8-rhs h2{
+    font-size: 0.7cm;
+    color: rgb(168, 167, 167);
+}
+.page8-lhs-h2{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
+.page9-ele{
+    display: grid;
+}
+.p9-sb-1,.p9-sb-2,.p9-sb-3,.p9-sb-4,.p9-sb-5,.p9-sb-6{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 0.1px solid black;
+    
+    border-color: rgb(74, 73, 73)
+    
+}
+.Page9 h1{
+    margin-bottom: 6.4%;
+    padding: 10%;
+    font-size: 1.5cm;
+}
+.Page9 p{
+    font-weight: 400;
+    font-size: 0.6cm;
+    padding: 6.4%;
+    color: rgb(196, 191, 191);
+}
+.Page9 h2{
+    color:gray;
+    font-size: 0.75cm;
+}
+.Page10{
+    padding-top: 15%;
+}
+.Page10 h1{
+    font-size: 2cm;
+    margin: 0;
+    background: linear-gradient(90deg,#01eeff,#0095ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Page10 p{
+    font-size: 0.6cm;
+    color: rgb(175, 172, 172);
+    font-weight: 600;
+    
+}
+.page10-text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:300px;
+}
+.Page11{
+    padding-top: 10%;
+}
+.Page11 h1{
+    text-align: center;
+    font-size: 2cm;
+    margin: 0;
+    background: linear-gradient(90deg,#51ff01,#02ffc8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Page11 p{
+    padding-right: 50%;
+    padding-top: 6.4%;
+    font-size: 0.64cm;
+    color: rgb(179, 177, 177);
+}
+.Page11 a{
+    color: white;
+    font-size: 0.64cm;
+}
+.page12-ele1{
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+}
+.Page12{
+    padding-top: 10%;
+}
+.Page12 h1{
+    font-size: 4cm ;
+    margin: 0;
+    background: linear-gradient(90deg,#e601ff,#3002ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Page12 h2{
+    font-size: 1cm;
+}
+.Page12 p{
+    font-size: 0.64cm;
+    padding-right: 15%;
+    color: rgb(199, 196, 196);
+}
+.Page12 .circle-page12{
+    align-items: center;
+    border: 3px solid yellowgreen;
+    background-color: #000000;
+    border-radius: 100%;
+    color: white;
+    height: 200px;
+    width: 200px;
+    
+}
+.Page12 .circle-page12:hover{
+    background: url('https://media.tenor.com/vlDeJrkospwAAAAC/black-and-white-pokemon.gif');
+    background-size: 300px;
+}
+.Page12 .circle-page12:hover > .circle-page12 p{
+    visibility: hidden;
+}
+.Page12 .circle-page12 p{
+    text-align: center;
+    padding-top: 30%;
+    padding-left: 10%;
+}
+.Page13{
+    padding-top: 10%;
+}
+.Page13 h1{
+    font-size: 4cm ;
+    margin: 0;
+    background: linear-gradient(90deg,#e30707,#f0bb86);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Page13 p{
+    color: gray;
+}
+.p13-subele-1,.p13-subele-2,.p13-subele-3{
+    
+    border-bottom: 0.1px solid black;
+    padding: 2.4%;
+    border-color: rgb(74, 73, 73)
+    
+}
+.Page13 a{
+    color: white;
+    font-size: 1.2cm;
+    text-decoration: none;
+    font-weight: 700;
+}
+.Page13 h3{
+    color:gray;
+    font-weight: 500;
+}
+
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    .landing-text{
+        color: white;
+        font-size: 0.64cm;
+        padding-left: 3.2%;
+        padding-right: 3.2%;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .landing-text-main-editz{
+        margin: 0;
+        font-size: 2cm;
+        color: white;
+        padding-left: 3.2%;
+        padding-right: 3.2%;
+        padding-bottom: 0;
+        padding-top: 10%;
+        
+    }
+    .landing-text-main-editz{
+        background: url('/public/ezgif.com-optimize.gif');
+       
+        
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .Page-2{
+        text-align: left;
+        background-repeat: no-repeat;
+        background-position: top left !important;
+        background-size: 15%;
+        padding-bottom: 5%;
+    }
+    .Page-2 h1{
+        font-size: 0.64cm;
+        padding-left: 10%;
+        padding-right: 30%;
+    }
+    .Page-2 h2{
+        color: grey;
+        font-weight:500;
+        font-size: 0.5cm;
+        padding-left: 10%;
+        padding-right: 15%;
+    }
+    .Page3{
+        padding-top: 2%;
+        background-image: url(/public/page3-bg-1.jpeg),url(/public/page3-bg-2.jpeg);
+        background-position: top right, bottom left !important;
+        background-repeat: no-repeat;
+        background-size: 23%;
+        
+        
+    }
+    .Page3 p{
+      font-size: 0.5cm;
+      font-weight: 700;
+      padding-left: 15%;
+      padding-right: 15%;
+      color: grey; 
+    }
+    .Page3 a{
+      color:white;
+      text-decoration: underline;
+      
+    }
+    .Page4{
+        padding-top: 5%;
+        
+    
+    }
+    .page4-ele{
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        grid-gap: 20px;
+        padding: 3%;
+        align-items: center;
+        text-align: center;
+    }
+    .page4-subele-1,.page4-subele-2,.page4-subele-3,.page4-subele-3,.page4-subele-4{
+       display: grid;
+       
+       text-align: center;
+       
+    }
+    .Page4 h2{
+        text-align: center;
+        font-size: 0.5cm;
+        padding-bottom: 5%;
+    }
+    .Page4 a{
+        color: white;
+        font-weight: 700;
+        font-size: 0.4cm;
+        text-decoration-color: grey;
+        text-decoration-thickness: 2px;
+    }
+    
+    
+    
+    
+    .page4-ele {
+        opacity: 0;
+        transition: opacity 1s ease-in;
+      }
+      
+      .fade-in {
+        opacity: 1;
+      }
+      
+      
+    .image-page4{
+        padding-bottom: 10%;
+    }
+    .Page5{
+        padding-top: 10%;
+    }
+    .Page5 h2{
+        font-size: 0.5cm;
+    }
+    .page5-imgs{
+        height: 6.4cm;
+    }
+    .Page5 h1{
+        font-size: 1cm;
+        text-align: right;
+        padding-right: 1%;
+        background: linear-gradient(90deg,#00dbde,#fc00ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .Page5 p{
+        font-size: 0.4cm;
+        font-weight: 800;
+    }
+    .Page-5-subele,.Page6,.Page7{
+        display: grid;
+        grid-template-columns: 1fr ;
+        padding: 5%;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    .pg6-imgs{
+        height: 5cm;
+    }
+    .Page6 p{
+        font-size: 0.4cm;
+        font-weight: 800;
+        padding-right: 50%;
+    }
+    .Page6 h2{
+        font-size: 0.5cm;
+        padding-right: 50%;
+    }
+    .page7-imgs{
+        height: 6.4cm;
+    }
+    .Page7 h2{
+        font-size: 0.5cm;
+        
+    }
+    .Page7 p{
+        font-size: 0.5cm;
+        font-weight: 800;
+    }
+    .Seemywork a{
+        font-size: 0.4cm;
+    }
+    .Page8{
+        padding-top: 8%;
+        padding-bottom: 8%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 30px;
+    }
+    .page8-lhs h1{
+        font-size: 2cm;
+        margin: 0;
+        background: linear-gradient(90deg,#01eeff,#f6ff00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+    }
+    .page8-lhs h2{
+        font-size: 0.7cm;
+        
+    }
+    .page8-lhs p{
+        font-size: 0.5cm;
+        
+        color: rgb(210, 204, 204);
+    }
+    .page8-rhs h1{
+        font-size: 1cm;
+    }
+    .page8-rhs h2{
+        font-size: 0.5cm;
+        color: rgb(168, 167, 167);
+    }
+    .page8-lhs-h2{
+        opacity: 0;
+        transition: opacity 1s ease-in;
+      }
+      
+      .fade-in {
+        opacity: 1;
+      }
+      .page9-ele{
+        display: grid;
+    }
+    .p9-sb-1,.p9-sb-2,.p9-sb-3,.p9-sb-4,.p9-sb-5,.p9-sb-6{
+        display: grid;
+        grid-template-columns: 1fr ;
+        border-bottom: 0.1px solid black;
+        border-color: rgb(74, 73, 73)
+        
+    }
+    .Page9 h1{
+        margin-bottom: 1%;
+        
+        font-size: 1cm;
+    }
+    .Page9 p{
+        font-weight: 400;
+        font-size: 0.6cm;
+        padding: 6.4%;
+        color: rgb(196, 191, 191);
+    }
+    .Page9 h2{
+        color:gray;
+        font-size: 0.5cm;
+    }
+    .Page10{
+        padding-top: 15%;
+    }
+    .Page10 h1{
+        font-size: 1cm;
+        margin: 0;
+        background: linear-gradient(90deg,#01eeff,#0095ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .Page10 p{
+        font-size: 0.6cm;
+        color: rgb(175, 172, 172);
+        font-weight: 600;
+        
+    }
+    .page10-text{
+        display: grid;
+        grid-template-columns: 1fr ;
+        
+    }
+    .Page11{
+        padding-top: 10%;
+    }
+    .Page11 h1{
+        text-align: center;
+        font-size: 1cm;
+        margin: 0;
+        background: linear-gradient(90deg,#51ff01,#02ffc8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .Page11 p{
+        padding-right: 30%;
+        padding-top: 6.4%;
+        font-size: 0.54cm;
+        color: rgb(179, 177, 177);
+    }
+    .Page11 a{
+        color: white;
+        font-size: 0.54cm;
+    }
+    .Page12{
+        padding-top: 10%;
+    }
+    .Page12 h1{
+        font-size: 2cm ;
+        margin: 0;
+        background: linear-gradient(90deg,#e601ff,#3002ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .Page12 h2{
+        font-size: 0.64cm;
+    }
+    .Page12 p{
+        font-size: 0.5cm;
+        padding-right: 15%;
+        color: rgb(199, 196, 196);
+    }
+    .Page12 .circle-page12{
+        align-items: center;
+        border: 3px solid rgb(0, 0, 0);
+        background-color: #000000;
+        border-radius: 100%;
+        color: white;
+        
+        height: 200px;
+        width: 200px;
+        
+    }
+    .Page12 .circle-page12:hover{
+        background-color: black;
+        background-size: 300px;
+    }
+    .Page12 .circle-page12:hover > .circle-page12 p{
+        visibility: hidden;
+    }
+    .Page12 .circle-page12 p{
+        text-align: center;
+        color: black;
+        padding-top: 30%;
+        padding-left: 10%;
+    }
+    .Page13{
+        padding-top: 10%;
+    }
+    .Page13 h1{
+        font-size: 2cm ;
+        margin: 0;
+        background: linear-gradient(90deg,#e30707,#f0bb86);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .Page13 p{
+        color: gray;
+    }
+    .p13-subele-1,.p13-subele-2,.p13-subele-3{
+        
+        border-bottom: 0.1px solid black;
+        padding: 2.4%;
+        border-color: rgb(74, 73, 73)
+        
+    }
+    .Page13 a{
+        color: white;
+        font-size: 0.6cm;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    .Page13 h3{
+        color:gray;
+        font-weight: 500;
+    }
+  }
