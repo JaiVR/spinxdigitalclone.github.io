@@ -27,15 +27,12 @@
     padding-top: 0;
 }
 nav{
-    padding-left: 3.2%;
-    padding-right: 3.2%;
-    padding-top: 2%;
+    padding-left: 1.6%;
+    padding-right: 1.6%;
     padding-bottom: 0;
 }
 .landing-text-div{
-    align-self: center;
-    
-    
+    align-self: center;   
 }
 .landing-text-main-editz{
     margin: 0;
@@ -68,11 +65,15 @@ button:hover{
     align-self: center;
 }
 
-nav {
-    display:grid;
-    grid-template-columns: 0.3fr 1fr 0.3fr;
-    margin: 0px auto;
-    height: 50px;
+.nav-ele{
+    display: flex;
+    max-width: 1250px;
+    padding: 0 30px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    
+   
 }
 nav ul{
     list-style-type:none;
@@ -85,59 +86,64 @@ nav ul li{
     text-align: center;
     
 }
-.logo{
-    padding-top: 5%;
+.nav-links{
+    display: flex;
 }
+
+
+.drop-menu li a{
+   width: 100%;
+   color:black;
+   display: block;
+   padding: 0 0 0 15px;
+   font-weight: 400;
+}
+
+
+
 nav ul a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size:large;
-    display: inline-block;
     padding-right: 3%;
     padding-left: 3%;
-}
-nav ul li a{
-    text-decoration: none;
-    color:black;
-    
-    
-}
-.about-div{
-  background-color: white;
-   display: none;
 }
 
 nav ul a:hover{
     border-bottom: 2px solid black;
     padding-bottom: 5px;
-    border-color: yellowgreen;
-    transition: border-bottom 0.15s ease-in;
-    border-radius: 2px;
-    
-    
-    
+    border-color: greenyellow;
 }
-nav ul li p{
-    color:grey;
-    
+.nav-ele{
+    display: grid;
+    padding-top: 1%;
+    padding-left: 0;
+    grid-template-columns: 0.3fr 2fr 0.2fr;
 }
-nav ul li a{
-    font-weight: bold;
+.nav-links{
+    display: inline-block;
 }
-nav ul ul{
-    position:absolute;
-    visibility: hidden;
+.nav-links .drop-menu{
     background-color: white;
-}
-nav ul li :hover > ul{
+    width: 180px;
+    top: 65px;
     position:absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.nav-links li:hover .drop-menu{
+    top: 64px;
+    opacity: 1;
     visibility: visible;
 }
-
+.drop-menu{
+    display: inline-flex;
+}
 
 button{
     overflow: hidden;
+    width: 200px;
 }
 .button-image,.button-text{
     position: relative; 
@@ -165,8 +171,7 @@ button{
   
   .landing-text-main-editz{
     background: url('/public/ezgif.com-optimize.gif');
-   
-    
+    background-size: contain;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
