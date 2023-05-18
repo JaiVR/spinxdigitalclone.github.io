@@ -10,7 +10,7 @@ export default function Page2() {
       const currentPosition = window.pageYOffset;
       const maxScroll = document.documentElement.scrollHeight - windowHeight;
       const scrollPercentage = (currentPosition / maxScroll) * 100;
-      const newPosition = (scrollPercentage / 100) * windowHeight*2.2;
+      const newPosition = (scrollPercentage / 100) * windowHeight*3;
       setScrollPosition(newPosition);
     }
 
@@ -25,7 +25,7 @@ export default function Page2() {
     backgroundPosition: `bottom left`,
     backgroundPositionY: `calc(100% - ${scrollPosition}px)`,
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '15%',
+    backgroundSize: '25%',
     paddingBottom: '5%',
   };
 

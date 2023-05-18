@@ -186,23 +186,24 @@ button{
   
 .Page-2{
     text-align: left;
-    
-    
     background-repeat: no-repeat;
     background-size: 15%;
-    padding-bottom: 5%;
+    
+    padding: 10%;
 }
 .Page-2 h1{
     font-size: 1.5cm;
     padding-left: 10%;
-    padding-right: 30%;
+    padding-right: 10%;
+    
 }
 .Page-2 h2{
     color: grey;
     font-weight:500;
     font-size: 1.2cm;
     padding-left: 10%;
-    padding-right: 15%;
+    padding-right: 6.4%;
+    
 }
 .Page3{
     padding-top: 2%;
@@ -575,12 +576,12 @@ button{
         background-image: url(/public/page3-bg-1.jpeg),url(/public/page3-bg-2.jpeg);
         background-position: top right, bottom left !important;
         background-repeat: no-repeat;
-        background-size: 23%;
+        background-size: 30%;
         
         
     }
     .Page3 p{
-      font-size: 0.5cm;
+      font-size: 0.64cm;
       font-weight: 700;
       padding-left: 15%;
       padding-right: 15%;

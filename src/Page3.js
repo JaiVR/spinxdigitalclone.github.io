@@ -10,7 +10,7 @@ export default function Page2() {
       const currentPosition = window.pageYOffset;
       const maxScroll = document.documentElement.scrollHeight - windowHeight;
       const scrollPercentage = (currentPosition / maxScroll) * 10;
-      const newPosition = (scrollPercentage / 100) * windowHeight*15;
+      const newPosition = (scrollPercentage / 100) * windowHeight*20;
       setScrollPosition(newPosition);
     }
 
