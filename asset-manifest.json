@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/spinxdigitalclone.github.io/static/css/main.6f80ad49.css",
-    "main.js": "/spinxdigitalclone.github.io/static/js/main.4ce693d6.js",
+    "main.css": "/spinxdigitalclone.github.io/static/css/main.5ef835ae.css",
+    "main.js": "/spinxdigitalclone.github.io/static/js/main.786b438b.js",
     "static/js/787.efe7c573.chunk.js": "/spinxdigitalclone.github.io/static/js/787.efe7c573.chunk.js",
     "static/media/ezgif.com-optimize.gif": "/spinxdigitalclone.github.io/static/media/ezgif.com-optimize.f744993eff3e00418bf2.gif",
     "static/media/page3-bg-2.jpeg": "/spinxdigitalclone.github.io/static/media/page3-bg-2.5ff4e3c525e7c862a164.jpeg",
     "static/media/page3-bg-1.jpeg": "/spinxdigitalclone.github.io/static/media/page3-bg-1.7ba6de6ca9fc0a05edb0.jpeg",
     "index.html": "/spinxdigitalclone.github.io/index.html",
-    "main.6f80ad49.css.map": "/spinxdigitalclone.github.io/static/css/main.6f80ad49.css.map",
-    "main.4ce693d6.js.map": "/spinxdigitalclone.github.io/static/js/main.4ce693d6.js.map",
+    "main.5ef835ae.css.map": "/spinxdigitalclone.github.io/static/css/main.5ef835ae.css.map",
+    "main.786b438b.js.map": "/spinxdigitalclone.github.io/static/js/main.786b438b.js.map",
     "787.efe7c573.chunk.js.map": "/spinxdigitalclone.github.io/static/js/787.efe7c573.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f80ad49.css",
-    "static/js/main.4ce693d6.js"
+    "static/css/main.5ef835ae.css",
+    "static/js/main.786b438b.js"
   ]
 }
