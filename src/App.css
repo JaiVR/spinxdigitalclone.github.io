@@ -6,6 +6,18 @@
     width:auto; 
 }
 
+.App::-webkit-scrollbar {
+    width: 10px; 
+  }
+
+.App::-webkit-scrollbar-track {
+    background:black;
+  }
+
+.App::-webkit-scrollbar-thumb {
+    background: yellowgreen;
+  }
+
 .landing-text{
     color: white;
     font-size: 2cm;

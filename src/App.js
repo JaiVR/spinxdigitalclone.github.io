@@ -1,4 +1,6 @@
 import Nav from './Nav';
+import React from 'react';
+import { useEffect } from 'react';
 import Landing from './Landing';
 import Page2 from './Page2';
 import './App.css';
@@ -16,11 +18,22 @@ import Page13 from './Page13';
 
 function App() {
 
-   var cursor =document.querySelector(".cursor");
-   var cursor2 =document.querySelector(".cursor2");
-   document.addEventListener("mousemove",function(e){
-        cursor.style.cssText=cursor2.style.cssText= "left:" + e.clientX + "px; top: " + e.clientY + "px;";
-   })
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const cursor = document.querySelector('.cursor');
+      const cursor2 = document.querySelector('.cursor2');
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      cursor2.style.left = e.clientX + 'px';
+      cursor2.style.top = e.clientY + 'px';
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
 
   return (
     <div className="App">
