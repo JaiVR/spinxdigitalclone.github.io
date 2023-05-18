@@ -6,9 +6,6 @@
     width:auto; 
 }
 
-.App{
-    cursor: url('/public/cursor-dvm-2-2.png'), auto;
-}
 .landing-text{
     color: white;
     font-size: 2cm;
@@ -514,6 +511,34 @@ button{
     color:gray;
     font-weight: 500;
 }
+.App{
+    cursor: pointer;
+}
+.cursor{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 0.2px solid yellowgreen;
+    border-radius: 50%;
+    left:0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.1s;
+}
+.cursor2{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: yellowgreen;
+    border-radius: 100%;
+    left:0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.15s;
+}
+
 
 
 @keyframes fade-in {
@@ -576,7 +601,7 @@ button{
         background-image: url(/public/page3-bg-1.jpeg),url(/public/page3-bg-2.jpeg);
         background-position: top right, bottom left !important;
         background-repeat: no-repeat;
-        background-size: 30%;
+    background-size: 30%;
         
         
     }
