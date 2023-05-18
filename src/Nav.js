@@ -4,6 +4,10 @@ export default function Nav(){
     
     return(
         <nav className="navbar">
+            <input type="checkbox" id="check"></input>
+            <label for="check" className="checkbtn">
+                <i className="fas fa-bars"></i>
+            </label>
             <div className="nav-ele">
             <div className="logo">
               <a href="#"><img src="logo.svg" ></img></a>

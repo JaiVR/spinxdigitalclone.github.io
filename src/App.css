@@ -1,9 +1,11 @@
+
 .mainpage{
     background-color:#000000;   
 }
 
 *{
-    width:auto; 
+    
+    overflow-x:hidden
 }
 
 .App::-webkit-scrollbar {
@@ -67,7 +69,7 @@ button:hover{
 
 .nav-ele{
     display: flex;
-    max-width: 1250px;
+    
     padding: 0 30px;
     margin: auto;
     align-items: center;
@@ -92,7 +94,7 @@ nav ul li{
 
 
 .drop-menu li a{
-   width: 100%;
+   
    color:black;
    display: block;
    padding: 0 0 0 15px;
@@ -110,23 +112,19 @@ nav ul a {
     padding-left: 3%;
 }
 
-nav ul a:hover{
-    border-bottom: 2px solid black;
-    padding-bottom: 5px;
-    border-color: greenyellow;
-}
+
 .nav-ele{
     display: grid;
     padding-top: 1%;
     padding-left: 0;
-    grid-template-columns: 0.3fr 2fr 0.2fr;
+    grid-template-columns: 0.3fr 2fr 0.5fr;
 }
 .nav-links{
     display: inline-block;
 }
 .nav-links .drop-menu{
     background-color: white;
-    width: 180px;
+    
     top: 65px;
     position:absolute;
     opacity: 0;
@@ -143,12 +141,17 @@ nav ul a:hover{
 
 button{
     overflow: hidden;
-    width: 200px;
+     width: 200px;
 }
 .button-image,.button-text{
     position: relative; 
     animation: move-text 6.4s linear infinite; 
   }
+  nav ul a:hover{
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    border-color: greenyellow;
+}
   
   @keyframes move-text {
     0% {
@@ -167,6 +170,9 @@ button{
     100%{
         left: 100%;
     }
+  }
+  .checkbtn{
+    color: white;
   }
   
   .landing-text-main-editz{
@@ -912,4 +918,112 @@ button{
         color:gray;
         font-weight: 500;
     }
+
+.button-image{
+    height: 40px;
+}
+button{
+    background-color: greenyellow;
+    display: flex;
+    padding: 1%;
+    border-radius: 1px;
+    height: 56px;
+}
+button:hover{
+    background-color: white;
+}
+.button-text{
+    align-self: center;
+}
+.button-image{
+    align-self: center;
+}
+
+.nav-ele{
+    display: flex;
+    max-width: 1250px;
+    padding: 0 30px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    
+   
+}
+nav ul{
+    list-style-type:none;
+    padding-left: 48%;
+}
+nav ul li{
+    float: left;
+    width: 217px;
+    line-height: 50px;
+    text-align: center;
+    
+}
+.nav-links{
+    display: flex;
+}
+
+
+.drop-menu li a{
+   width: 100%;
+   color:black;
+   display: block;
+   padding: 0 0 0 15px;
+   font-weight: 400;
+}
+
+
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size:large;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+nav ul a:hover{
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    border-color: greenyellow;
+}
+.nav-ele{
+    display: grid;
+    padding-top: 1%;
+    padding-left: 0;
+    grid-template-columns: 0.3fr 2fr;
+}
+.nav-links{
+    display: inline-block;
+    visibility:hidden;
+}
+.nav-links .drop-menu{
+    background-color: white;
+    width: 180px;
+    top: 65px;
+    position:absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.nav-links li:hover .drop-menu{
+    top: 64px;
+    opacity: 1;
+    visibility: visible;
+}
+.drop-menu{
+    display: inline-flex;
+}
+
+button{
+    visibility: hidden;
+    width: 0;
+}
+.logo
+{
+    height: 25px;
+}
+
+
   }
