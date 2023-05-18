@@ -511,9 +511,7 @@ button{
     color:gray;
     font-weight: 500;
 }
-.App{
-    cursor: pointer;
-}
+
 .cursor{
     position: fixed;
     width: 40px;
